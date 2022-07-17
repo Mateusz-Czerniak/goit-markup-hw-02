@@ -1,14 +1,15 @@
 :root {
   --main-color: rgba(33, 150, 243, 1);
-  --main-font: font-family: "Roboto", sans-serif;
-  --secondary-font: font-family: "Raleway";
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway";
   --gray-color: rgba(117, 117, 117, 1);
   --black-color: rgba(33, 33, 33, 1);
   --white-color: rgba(255, 255, 255, 1);
 }
 
 body {
-  font-family:var(--main-font);
+  font-family: var(--main-font);
+  color: var(--black-color);
 }
 
 header {
@@ -31,7 +32,7 @@ header {
 }
 
 .logo-first {
-  font: var(--secondary-font);
+  font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.2;
   color: var(--main-color);
@@ -94,6 +95,7 @@ header {
 }
 
 .portfolio-link {
+  font-family: var(--main-font);
   position: relative;
   margin-left: 46px;
   margin-right: 46px;
@@ -190,6 +192,10 @@ color: var(--gray-color);
     display: block;
 }
 
+.text-lorem-ipsum{
+  color: var(--gray-color);
+}
+
 .job-categories {
 font-style: normal;
 font-weight: 700;
@@ -199,6 +205,15 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 
+.john-doe{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.position{
+  color: var(--gray-color);
+  font-size: 16px;
+}
 
 
 
@@ -241,7 +256,7 @@ letter-spacing: 0.03em;
   width: 128px;
   height: 38px;
   border-radius: 4px;
-  background: var(--white-color);
+  background: #F5F4FA;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -262,7 +277,61 @@ letter-spacing: 0.03em;
   color:var(--white-color) ;
 }
 
+.description {
+  color:var(--gray-color);
+}
 
+.footer {
+  width: 1600px;
+  height: 252px;
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.logo-footer-one {
+  margin: 154px 1240px 20px 215px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  box-sizing: border-box;
+  tab-size: 4;
+  cursor: pointer;
+  display: block;
+}
+
+.logo-footer-two {
+  color: var(--white-color);
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 154px 1240px 20px 0px;
+}
+
+.address {
+  margin: 20px 1138px 9px 215px;
+  font-size: 14px;
+  color: var(--white-color);
+}
+
+.email-footer {
+  margin: 9px 1154px 9px 215px;
+  color: var(--gray-color);
+}
+
+.tel-footer {
+  margin: 9px 1154px 60px 215px;
+  color: var(--gray-color);
+}
 
 
 .email-footer:hover{
